@@ -7,3 +7,4 @@ while True:
     print(f'Hello {line.rstrip()}!\n')
 
 print("Exit")
+
