@@ -1,5 +1,5 @@
-
-python3.8 -m venv venv38_cds
-source venv38_cds/bin/activate
+# go to the working directory
+python3.8 -m venv venv
+source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
