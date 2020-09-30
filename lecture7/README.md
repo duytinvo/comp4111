@@ -22,6 +22,8 @@ There are several resources that we could employ to obtain labelled data sets. T
 4. [Kaggle](https://www.kaggle.com/)
     - [Pima Indians Diabetes Database](https://www.kaggle.com/uciml/pima-indians-diabetes-database)
 
+5. [sklearn toy datasets](https://scikit-learn.org/stable/datasets/index.html#datasets)
+
 ## About This Lecture
 We will work on the [SMS Spam Collection](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection#) dataset to:
 
