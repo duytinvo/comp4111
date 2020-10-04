@@ -182,7 +182,7 @@ if __name__ == '__main__':
     
     argparser.add_argument("--scaler", action='store_true', default=False, help="scale flag")
     
-    argparser.add_argument('--ml_cls', help='Machine learning classifier', default="DT", type=str)
+    argparser.add_argument('--ml_cls', help='Machine learning classifier', default="MLP", type=str)
     
     argparser.add_argument('--model_dir', help='Model dir', default="../data/smsspamcollection/", type=str)
         
@@ -194,8 +194,8 @@ if __name__ == '__main__':
         os.mkdir(args.model_dir)
     args.model_name = os.path.join(args.model_dir, args.ml_cls + ".pickle")
 
-    model = train(args)
-    measures = test(args, args.model_name)
-    label, prob = predict("call us to win a price", args.model_name)
+    # model = train(args)
+    # measures = test(args, args.model_name)
+    # label, prob = predict("call us to win a price", args.model_name)
 
 
