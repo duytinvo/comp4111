@@ -1,0 +1,24 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> Iris Flower Detection </h1><br>
+        
+        <form method="POST", action="{{url_for('predict')}}">
+           <b> Enter sepal length (cm):  <input type="number" step="0.01", name='a', placeholder="Enter here"> <br><br>
+            Enter petal length (cm):  <input type="number" step="0.01", name='b', placeholder="Enter here"> <br><br><br></b>
+            <input type="submit" , value='Predict flower species' >
+        </form>
+
+        <img src='static\iris-dataset-measurements.png'> 
+        
+
+        <br><br>
+        <a href='/past'>Go to past results</a>    
+    </center>
+  
+    </body>
+</html>
+
+
