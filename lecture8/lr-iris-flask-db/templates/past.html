@@ -1,0 +1,23 @@
+<html>
+
+<body bgcolor=#128ee0>
+
+    <center>
+        <h1>  PAST PREDICTIONS:  </h1>
+        {% block content %}
+       
+        {% for post in posts %}
+            
+            <h5>Sepal Length: {{ post['sepal'] }}, Petal Length: {{ post['petal'] }}, Prediction: {{ post['prediction'] }} </h5>
+                
+        {% endfor %}
+    {% endblock %}
+
+    <br><br>
+    <a href='/'>Go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>

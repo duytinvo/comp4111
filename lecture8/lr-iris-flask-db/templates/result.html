@@ -1,0 +1,28 @@
+<html>
+
+<body bgcolor=#a3cfb4>
+
+    <center>
+
+        <h1>  PREDICTION:  </h1>
+    
+    {%if prediction == 0%}
+    <h1>Iris-setosa</h1>  
+    <img src='static\iris-setosa.jpg' width="400" height="300"> 
+     
+
+    {%else%}
+    <h1>Iris-versicolor</h1>
+    <img src='static\iris-versicolor.jpg' width="400" height="300">  
+    
+    
+    {%endif%}
+
+        <br><br>
+    <a href='/'>Go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>
