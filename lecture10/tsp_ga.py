@@ -219,15 +219,15 @@ def plot(progress):
     distance = []
     X, Y = (), ()
     fig, (ax1, ax2) = plt.subplots(2, 1)
-    line1, = ax1.plot(X, Y, marker='o')
+    line1, = ax1.plot(X, Y, marker='*')
     ax1.set_xlim(0, 200)
     ax1.set_ylim(0, 200)
     ax1.set_title("Searching Routes")
     ax1.set_xlabel("Latitude")
     ax1.set_ylabel("Longitude")
-    line2, = ax2.plot(list(range(len(distance))), distance, marker='x')
+    line2, = ax2.plot(list(range(len(distance))), distance, marker='^')
     ax2.set_xlim(0, len(distances) + 5)
-    ax2.set_ylim(700, max(distances) + 5)
+    ax2.set_ylim(300, max(distances) + 5)
     ax2.set_xlabel("generation")
     ax2.set_ylabel("Distance")
     ax2.set_title("Total Distance of Routes")
@@ -247,7 +247,7 @@ def plot(progress):
 
 if __name__ == '__main__':
     """
-     python tsp_ga.py --seed 12345 --num_city 25 --pop_size 100 --mut_rate 0.01 --bre_rate 0.9 --n_gen 200
+     python tsp_ga.py --seed 12345 --num_city 10 --pop_size 100 --mut_rate 0.01 --bre_rate 0.9 --n_gen 100
      """
     import argparse
 
